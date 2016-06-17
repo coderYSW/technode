@@ -44,7 +44,6 @@ angular.module('technodeApp').controller('MessageCreatorCtrl',function($scope,so
 		if($scope.newMessage == ''){
 			return;
 		}
-		alert($scope.newMessage);
 		socket.emit('createMessage',$scope.newMessage);
 		$scope.newMessage='';
 	}
